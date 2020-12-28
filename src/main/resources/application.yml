@@ -1,0 +1,22 @@
+#spring:
+#  elasticsearch:
+#    ip: 192.168.137.130
+#    port: 9200
+#    pool: 5
+#    cluster-name: elasticsearch
+#server:
+#  port: 8083
+
+
+server:
+  port: 8080
+spring:
+  application:
+    name: elasticsearch
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.137.130:9300
+      cluster-name: docker-cluster
+      client-transport-sniff: false
+
+
